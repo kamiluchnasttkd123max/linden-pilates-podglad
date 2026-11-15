@@ -260,6 +260,72 @@ footer a{text-decoration:none}footer a:hover{color:var(--brass-light)}
   form{padding:26px 22px}
   .brand .mk{width:42px}.brand .wm b{font-size:21px}
 }
+
+/* ===== telefon: poprawki ===== */
+.swipe-hint,.mbar{display:none}
+.price-rows b{white-space:nowrap}
+@media (hover:none){.card:hover{transform:none}.gallery figure:hover img{transform:none}}
+@media (max-width:860px){
+  html{scroll-padding-top:72px}
+  .nav .wrap{height:72px}
+  .nav ul{inset:72px 0 0 0;height:calc(100svh - 72px);overflow-y:auto;padding:8px 24px 40px}
+  .nav ul a{font-size:15px;padding:18px 0}
+  .nav ul a.btn,.nav.solid ul a.btn,.nav.open ul a.btn{color:var(--cream)!important;background:var(--ink);border-bottom:0;padding:18px 22px 16px;margin-top:24px}
+  body.menu-open{overflow:hidden}
+  section{padding:64px 0}
+  h2{font-size:clamp(32px,8.6vw,44px)}
+  .lead{font-size:18px}
+  .hero{padding:110px 0 calc(40px + env(safe-area-inset-bottom))}
+  .hero .ctas{margin-top:24px}
+  .hero .facts{display:grid;grid-template-columns:repeat(3,auto);justify-content:space-between;gap:12px;margin-top:34px;padding-top:20px}
+  .hero .facts span{font-size:11px;letter-spacing:.1em;display:block;line-height:1.35}
+  /* galeria jako przewijany pasek */
+  .gallery{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -24px;padding:0 24px 6px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .gallery::-webkit-scrollbar{display:none}
+  .gallery figure{flex:0 0 82%;height:min(110vw,420px);scroll-snap-align:center}
+  .swipe-hint{display:block;margin:12px 0 0;font-size:13px;letter-spacing:.08em;color:var(--muted)}
+  .features{margin-top:44px;gap:26px}
+  .studio-head{gap:16px;margin-bottom:32px}
+  .cards{margin-top:36px}
+  .card{padding:26px 22px}
+  .visit{gap:36px}
+  .visit .photo{aspect-ratio:4/3}
+  .steps{margin-top:44px}
+  /* grafik jako karty dni */
+  .schedule{overflow:visible}
+  .schedule table{min-width:0;margin-top:28px}
+  .schedule thead{display:none}
+  .schedule table,.schedule tbody,.schedule tr,.schedule td{display:block}
+  .schedule tr{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:14px 18px 8px;margin-bottom:12px}
+  .schedule td{border:0;padding:6px 0;display:flex;gap:12px;align-items:baseline}
+  .schedule td.day{font-size:22px;padding:0 0 6px}
+  .schedule td[data-label]::before{content:attr(data-label);flex:0 0 92px;font:600 11px/1.8 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+  .schedule td>span{flex-wrap:wrap}
+  .schedule td.empty{display:none}
+  .schedule td{flex-wrap:wrap;row-gap:0}.schedule td[data-label]::before{flex-basis:92px}.slot{font-size:15px;padding:7px 12px 5px;white-space:nowrap}
+  .legend{flex-direction:column;gap:10px}
+  /* cennik */
+  .price-grid{margin-top:36px;gap:22px}
+  .price{padding:30px 24px}
+  .price-rows{padding:4px 20px}
+  .price-rows div{align-items:center;font-size:16px}
+  .meaning{grid-template-columns:38px 1fr;gap:14px}
+  .manifest .mk{width:72px}
+  .faq .grid{gap:28px}
+  summary{font-size:19px;padding:18px 0}
+  details p{padding-right:0}
+  .contact .grid{gap:40px}
+  .map{margin-top:60px;height:300px}
+  footer{padding:40px 0 calc(110px + env(safe-area-inset-bottom))}
+  footer nav a{padding:8px 0}
+  /* pasek akcji na dole ekranu */
+  .mbar{display:flex;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(251,248,243,.96);backdrop-filter:blur(10px);box-shadow:0 -1px 0 var(--line);transform:translateY(110%);transition:transform .3s}
+  .mbar.show{transform:none}
+  body.menu-open .mbar{transform:translateY(110%)}
+  .mbar-call{display:inline-flex;align-items:center;justify-content:center;gap:8px;flex:0 0 auto;min-height:48px;padding:0 18px;border:1px solid var(--ink);border-radius:999px;text-decoration:none;font:600 13px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase}
+  .mbar-cta{flex:1;justify-content:center;min-height:48px;padding:0 14px;font-size:12px;letter-spacing:.08em;white-space:nowrap}
+}
+@media (max-width:380px){.mbar-call{padding:0 14px}.mbar-call svg{display:none}.hero .facts b{font-size:24px}}
 </style>
 </head>
 <body>
@@ -352,13 +418,14 @@ footer a{text-decoration:none}footer a:hover{color:var(--brass-light)}
       <div><div class="eyebrow">Studio</div><h2>Spokojna przestrzeń do pracy z ciałem</h2></div>
       <p class="lead">Jasna sala z dużym oknem, dębową podłogą i ukrytą zabudową. Nie ma tu bałaganu ani sprzętu na widoku, są tylko reformery, światło i zieleń.</p>
     </div>
-    <div class="gallery">
+    <div class="gallery" aria-label="Zdjęcia studia">
       <figure class="g1 rv"><img src="img/sciana-z-mchu-linden.jpg" alt="Ściana z mchu z podświetlanym logo LINDEN PILATES" loading="lazy"><figcaption>Ściana z mchu</figcaption></figure>
       <figure class="g2 rv"><img src="img/05-okno-i-swiatlo.jpg" alt="Duże okno, oliwka w donicy i miękkie światło" loading="lazy"><figcaption>Dzienne światło</figcaption></figure>
       <figure class="g3 rv"><img src="img/04-zabudowa.jpg" alt="Dębowa zabudowa ryflowana z niszą na ręczniki i piłki" loading="lazy"><figcaption>Wszystko na swoim miejscu</figcaption></figure>
       <figure class="g4 rv"><img src="img/07-hero-wieczor.jpg" alt="Sala wieczorem w ciepłym świetle LED" loading="lazy"><figcaption>Wieczorne zajęcia</figcaption></figure>
       <figure class="g5 rv"><img src="img/02-rzad-luster.jpg" alt="Rząd reformerów z łukowymi lustrami" loading="lazy"><figcaption>Lustro przy każdym reformerze</figcaption></figure>
     </div>
+    <p class="swipe-hint" aria-hidden="true">Przesuń, aby zobaczyć więcej zdjęć →</p>
     <div class="features">
       <div class="feature rv"><div class="ico">5</div><h3>Małe grupy</h3><p>Najwyżej pięć osób na zajęciach, więc każdy ruch jest pod okiem instruktora.</p></div>
       <div class="feature rv"><div class="ico">◐</div><h3>Własne lustro</h3><p>Za każdym reformerem wisi wysokie lustro. Widzisz swoją sylwetkę i od razu poprawiasz ustawienie.</p></div>
@@ -431,17 +498,17 @@ footer a{text-decoration:none}footer a:hover{color:var(--brass-light)}
 <!-- SCHEDULE -->
 <section class="schedule" id="grafik">
   <div class="wrap">
-    <div class="rv"><div class="eyebrow">Grafik</div><h2>Zajęcia rano i wieczorem</h2>
+    <div class="rv"><div class="eyebrow">Grafik</div><h2>Zajęcia rano, po południu i wieczorem</h2>
     <p class="lead">Aktualny grafik i wolne miejsca potwierdzamy przy zapisie.</p></div>
     <table class="rv">
       <thead><tr><th>Dzień</th><th>Rano</th><th>Po południu</th><th>Wieczorem</th></tr></thead>
       <tbody>
-        <tr><td>Poniedziałek</td><td><span class="slot">7:00 Grupa</span></td><td><span class="slot b">16:30 Indywidualne</span></td><td><span class="slot">18:00 Grupa</span><span class="slot">19:15 Grupa</span></td></tr>
-        <tr><td>Wtorek</td><td><span class="slot">9:00 Grupa</span></td><td><span class="slot b">15:00 Duet</span></td><td><span class="slot">18:00 Grupa</span><span class="slot">19:15 Grupa</span></td></tr>
-        <tr><td>Środa</td><td><span class="slot">7:00 Grupa</span></td><td><span class="slot b">16:30 Indywidualne</span></td><td><span class="slot">18:00 Grupa</span><span class="slot">19:15 Grupa</span></td></tr>
-        <tr><td>Czwartek</td><td><span class="slot">9:00 Grupa</span></td><td><span class="slot b">15:00 Duet</span></td><td><span class="slot">18:00 Grupa</span><span class="slot">19:15 Grupa</span></td></tr>
-        <tr><td>Piątek</td><td><span class="slot">7:00 Grupa</span></td><td><span class="slot b">16:30 Pierwsza wizyta</span></td><td><span class="slot">18:00 Grupa</span></td></tr>
-        <tr><td>Sobota</td><td><span class="slot">9:00 Grupa</span><span class="slot">10:15 Grupa</span></td><td>–</td><td>–</td></tr>
+        <tr><td class="day">Poniedziałek</td><td data-label="Rano"><span class="slot">7:00 Grupa</span></td><td data-label="Po południu"><span class="slot b">16:30 Indywidualne</span></td><td data-label="Wieczorem"><span class="slot">18:00 Grupa</span><span class="slot">19:15 Grupa</span></td></tr>
+        <tr><td class="day">Wtorek</td><td data-label="Rano"><span class="slot">9:00 Grupa</span></td><td data-label="Po południu"><span class="slot b">15:00 Duet</span></td><td data-label="Wieczorem"><span class="slot">18:00 Grupa</span><span class="slot">19:15 Grupa</span></td></tr>
+        <tr><td class="day">Środa</td><td data-label="Rano"><span class="slot">7:00 Grupa</span></td><td data-label="Po południu"><span class="slot b">16:30 Indywidualne</span></td><td data-label="Wieczorem"><span class="slot">18:00 Grupa</span><span class="slot">19:15 Grupa</span></td></tr>
+        <tr><td class="day">Czwartek</td><td data-label="Rano"><span class="slot">9:00 Grupa</span></td><td data-label="Po południu"><span class="slot b">15:00 Duet</span></td><td data-label="Wieczorem"><span class="slot">18:00 Grupa</span><span class="slot">19:15 Grupa</span></td></tr>
+        <tr><td class="day">Piątek</td><td data-label="Rano"><span class="slot">7:00 Grupa</span></td><td data-label="Po południu"><span class="slot b">16:30 Pierwsza wizyta</span></td><td data-label="Wieczorem"><span class="slot">18:00 Grupa</span></td></tr>
+        <tr><td class="day">Sobota</td><td data-label="Rano"><span class="slot">9:00 Grupa</span><span class="slot">10:15 Grupa</span></td><td class="empty" data-label="Po południu">–</td><td class="empty" data-label="Wieczorem">–</td></tr>
       </tbody>
     </table>
     <div class="legend rv"><span><span class="slot" style="margin:0">Grupa</span> do 5 osób</span><span><span class="slot b" style="margin:0">Indywidualne / duet</span> po wcześniejszym umówieniu</span></div>
@@ -495,6 +562,11 @@ footer a{text-decoration:none}footer a:hover{color:var(--brass-light)}
 </section>
 </main>
 
+<div class="mbar" id="mbar">
+  <a href="tel:+48000000000" class="mbar-call" aria-label="Zadzwoń do studia"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Zadzwoń</a>
+  <a href="#kontakt" class="btn btn-brass mbar-cta">Umów pierwszą wizytę</a>
+</div>
+
 <footer>
   <div class="wrap">
     <span class="brand"><svg aria-hidden="true" class="mk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 124" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
@@ -518,11 +590,14 @@ footer a{text-decoration:none}footer a:hover{color:var(--brass-light)}
 <script>
 const nav=document.getElementById('nav'),burger=document.getElementById('burger');
 const onScroll=()=>nav.classList.toggle('solid',scrollY>40);onScroll();addEventListener('scroll',onScroll,{passive:true});
-burger.addEventListener('click',()=>{const o=nav.classList.toggle('open');burger.setAttribute('aria-expanded',o);});
-document.querySelectorAll('#menu a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');burger.setAttribute('aria-expanded',false)}));
+burger.addEventListener('click',()=>{const o=nav.classList.toggle('open');document.body.classList.toggle('menu-open',o);burger.setAttribute('aria-expanded',o);burger.setAttribute('aria-label',o?'Zamknij menu':'Otwórz menu');});
+document.querySelectorAll('#menu a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');document.body.classList.remove('menu-open');burger.setAttribute('aria-expanded',false)}));
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12,rootMargin:'0px 0px -40px 0px'});
 document.querySelectorAll('.rv').forEach(el=>io.observe(el));
 document.getElementById('y').textContent=new Date().getFullYear();
+const mbar=document.getElementById('mbar'),kontakt=document.getElementById('kontakt');let inContact=false;
+new IntersectionObserver(es=>{inContact=es[0].isIntersecting;upd()},{threshold:0}).observe(kontakt);
+const upd=()=>mbar.classList.toggle('show',scrollY>window.innerHeight*.6&&!inContact);addEventListener('scroll',upd,{passive:true});upd();
 </script>
 </body>
 </html>
