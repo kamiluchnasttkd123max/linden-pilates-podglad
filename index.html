@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LINDEN PILATES · Pilates na reformerach · Wrocław, Lipa Piotrowska</title>
+<meta name="description" content="Kameralne studio pilatesu na reformerach we Wrocławiu, na Lipie Piotrowskiej. Zajęcia do 5 osób, każdy reformer z własnym lustrem. Pierwsza wizyta, treningi grupowe, w duecie i indywidualne.">
+<meta property="og:title" content="LINDEN PILATES · Wrocław, Lipa Piotrowska">
+<meta property="og:description" content="Kameralne studio pilatesu na reformerach. Zajęcia do 5 osób.">
+<meta property="og:image" content="https://lindenpilates.pl/ikony/podglad-linku-www-1200x630.png">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#F4EFE8">
+<!-- WERSJA ROBOCZA: usuń poniższą linię po uzupełnieniu cen, grafiku i kontaktu -->
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://lindenpilates.pl/">
+<meta property="og:url" content="https://lindenpilates.pl/">
+<meta property="og:locale" content="pl_PL">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SportsActivityLocation","name":"LINDEN PILATES","description":"Kameralne studio pilatesu na reformerach. Zajęcia do 5 osób.","url":"https://lindenpilates.pl/","image":"https://lindenpilates.pl/ikony/podglad-linku-www-1200x630.png","address":{"@type":"PostalAddress","addressLocality":"Wrocław","addressRegion":"dolnośląskie","addressCountry":"PL"},"areaServed":"Lipa Piotrowska, Wrocław"}
+</script>
+
+<link rel="icon" type="image/svg+xml" href="ikony/favicon.svg">
+<link rel="icon" type="image/png" href="ikony/favicon-32px.png">
+<link rel="apple-touch-icon" href="ikony/apple-touch-icon-180px.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#2B2621; --ink-soft:#5f554b; --muted:#8a7f72;
+  --cream:#F4EFE8; --paper:#FBF8F3; --line:#E4DBCF;
+  --brass:#A8834F; --brass-light:#D2AE72; --sage:#2F3B26; --sage-soft:#E6E9DF;
+  --serif:"Cormorant Garamond",Georgia,serif; --roman:"Cinzel","Trajan Pro",Georgia,serif; --sans:"Josefin Sans","Avenir Next",Helvetica,Arial,sans-serif;
+  --wrap:1180px; --r:18px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--paper);color:var(--ink);font:300 18px/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+.eyebrow{font:600 12px/1 var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--brass)}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.12;margin:0}
+h2{font-size:clamp(34px,4.6vw,56px);margin:14px 0 18px}
+h3{font-size:28px;font-weight:500}
+p{margin:0 0 1em}
+.lead{font-size:20px;color:var(--ink-soft);max-width:640px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 28px 14px;border-radius:999px;font:600 13px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;text-decoration:none;transition:.25s}
+.btn-primary{background:var(--ink);color:var(--cream)}
+.btn-primary:hover{background:var(--sage)}
+.btn-ghost{border:1px solid currentColor}
+.btn-ghost:hover{background:rgba(255,255,255,.12)}
+.btn-brass{background:var(--brass);color:#fff}
+.btn-brass:hover{background:#8f6e40}
+section{padding:120px 0}
+
+/* nav */
+.nav{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .3s,box-shadow .3s}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:84px}
+.brand{display:inline-flex;align-items:center;gap:12px;color:#fff;text-decoration:none}
+.brand .mk{width:52px;height:auto;color:var(--brass-light)}
+.brand .wm{display:flex;flex-direction:column;align-items:center;line-height:1}
+.brand .wm b{font:500 25px/1 var(--roman);letter-spacing:.14em}
+.brand .wm small{font:400 10px/1 var(--sans);letter-spacing:.5em;text-transform:uppercase;margin-top:6px;padding-left:.5em;display:flex;align-items:center;gap:8px}
+.brand .wm small::before,.brand .wm small::after{content:"";width:14px;height:1px;background:currentColor;opacity:.7}
+.nav.solid .brand,.nav.open .brand{color:var(--ink)}
+.nav.solid .brand .mk,.nav.open .brand .mk{color:var(--brass)}
+.nav .logo{text-decoration:none}
+.nav.solid{background:rgba(251,248,243,.94);backdrop-filter:blur(10px);box-shadow:0 1px 0 var(--line)}
+.nav ul{display:flex;gap:clamp(14px,1.8vw,28px);white-space:nowrap;list-style:none;margin:0;padding:0;align-items:center}
+.nav ul a{text-decoration:none;font:400 13px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:#fff;opacity:.92}
+.nav.solid ul a{color:var(--ink)}
+.nav ul a:hover{opacity:1;color:var(--brass-light)}
+.nav ul a.btn-primary,.nav.solid ul a.btn-primary{color:var(--cream)}
+.nav:not(.solid) ul a.btn-primary{color:var(--ink)}
+.nav .btn{padding:13px 22px 11px}
+.nav:not(.solid) .btn-primary{background:var(--cream);color:var(--ink)}
+.burger{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer;position:relative}
+.burger span{position:absolute;left:10px;right:10px;height:1.5px;background:#fff;transition:.3s}
+.nav.solid .burger span,.nav.open .burger span{background:var(--ink)}
+.burger span:nth-child(1){top:16px}.burger span:nth-child(2){top:22px}.burger span:nth-child(3){top:28px}
+.nav.open .burger span:nth-child(1){top:22px;transform:rotate(45deg)}
+.nav.open .burger span:nth-child(2){opacity:0}
+.nav.open .burger span:nth-child(3){top:22px;transform:rotate(-45deg)}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;color:#fff;padding:120px 0 9vh;overflow:hidden}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:68% 50%;transform:scale(1.04);animation:slow 18s ease-out forwards}
+@keyframes slow{to{transform:scale(1)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(25,20,16,.85) 0%,rgba(25,20,16,.62) 42%,rgba(25,20,16,.15) 64%,rgba(25,20,16,0) 78%),linear-gradient(180deg,rgba(25,20,16,.45) 0%,rgba(25,20,16,0) 25%,rgba(25,20,16,0) 55%,rgba(25,20,16,.7) 100%)}
+.hero .wrap{position:relative;z-index:2;width:100%}
+.hero h1{font-size:clamp(44px,6.2vw,86px);max-width:760px;margin:18px 0 22px}
+.hero h1 em{font-style:italic;color:#E2C08A}
+.hero h1,.hero .lead{text-shadow:0 2px 24px rgba(20,15,10,.55)}
+.hero .lead{color:rgba(255,255,255,.9);font-size:21px;max-width:560px}
+.hero .eyebrow{color:var(--brass-light)}
+.hero .ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+.hero .facts{display:flex;gap:42px;margin-top:56px;padding-top:26px;border-top:1px solid rgba(255,255,255,.25);flex-wrap:wrap}
+.hero .facts b{display:block;font:400 38px/1 var(--serif);color:#fff;margin-bottom:6px}
+.hero .facts span{font-size:13px;letter-spacing:.14em;text-transform:uppercase;opacity:.8}
+
+/* manifest */
+.manifest{background:var(--cream)}
+.manifest .grid{display:grid;grid-template-columns:1.05fr 1fr;gap:80px;align-items:center}
+.meanings{display:grid;gap:0;margin-top:34px}
+.meaning{display:grid;grid-template-columns:64px 1fr;gap:20px;padding:22px 0;border-top:1px solid var(--line)}
+.meaning:last-child{border-bottom:1px solid var(--line)}
+.meaning .n{font:400 30px/1 var(--roman);color:var(--brass)}
+.meaning h3{font-size:22px;margin-bottom:6px}
+.meaning p{margin:0;color:var(--ink-soft);font-size:17px}
+.arch{border-radius:999px 999px 18px 18px;overflow:hidden;aspect-ratio:3/4.2;box-shadow:0 30px 60px -30px rgba(43,38,33,.45)}
+.arch img{width:100%;height:100%;object-fit:cover}
+.manifest .mk{width:96px;color:var(--brass);margin-bottom:14px}
+
+/* studio gallery */
+.studio-head{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-bottom:48px}
+.studio-head .lead{margin:0}
+.gallery{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:220px;gap:16px}
+.gallery figure{margin:0;position:relative;overflow:hidden;border-radius:var(--r)}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.gallery figure:hover img{transform:scale(1.04)}
+.gallery figcaption{position:absolute;left:18px;bottom:16px;color:#fff;font-size:13px;letter-spacing:.14em;text-transform:uppercase;text-shadow:0 1px 10px rgba(0,0,0,.5)}
+.g1{grid-column:span 7;grid-row:span 2}.g2{grid-column:span 5;grid-row:span 2}
+.g3{grid-column:span 4;grid-row:span 2}.g4{grid-column:span 4;grid-row:span 2}.g5{grid-column:span 4;grid-row:span 2}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin-top:64px}
+.feature .ico{width:42px;height:42px;border-radius:50%;border:1px solid var(--brass);display:grid;place-items:center;color:var(--brass);margin-bottom:16px}
+.feature h3{font-size:21px;margin-bottom:8px}
+.feature p{font-size:16px;color:var(--ink-soft);margin:0}
+
+/* classes */
+.classes{background:var(--sage);color:var(--cream)}
+.classes .eyebrow{color:var(--brass-light)}
+.classes .lead{color:rgba(244,239,232,.8)}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:54px}
+.card{background:rgba(244,239,232,.06);border:1px solid rgba(244,239,232,.16);border-radius:var(--r);padding:30px 26px;display:flex;flex-direction:column;transition:.3s}
+.card:hover{background:rgba(244,239,232,.11);transform:translateY(-4px)}
+.card .tag{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--brass-light);margin-bottom:22px}
+.card h3{margin-bottom:12px}
+.card p{font-size:16px;color:rgba(244,239,232,.78);flex:1}
+.card ul{list-style:none;padding:0;margin:18px 0 0;font-size:14px;letter-spacing:.06em;color:rgba(244,239,232,.7)}
+.card li{padding:9px 0;border-top:1px solid rgba(244,239,232,.14)}
+
+/* first visit */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:46px;margin-top:56px;counter-reset:s}
+.step{position:relative;padding-top:28px;border-top:1px solid var(--ink)}
+.step::before{counter-increment:s;content:"0" counter(s);font:300 15px/1 var(--sans);letter-spacing:.2em;color:var(--brass);position:absolute;top:-8px;background:var(--paper);padding-right:14px}
+.step h3{margin-bottom:10px}
+.step p{color:var(--ink-soft);font-size:17px}
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.visit .photo{border-radius:var(--r);overflow:hidden;aspect-ratio:4/5}
+.visit .photo img{width:100%;height:100%;object-fit:cover}
+.checklist{list-style:none;padding:0;margin:26px 0 34px}
+.checklist li{padding:12px 0 12px 34px;border-bottom:1px solid var(--line);position:relative;font-size:17px}
+.checklist li::before{content:"";position:absolute;left:4px;top:19px;width:12px;height:12px;border-radius:50%;background:var(--brass)}
+
+/* pricing */
+.pricing{background:var(--cream)}
+.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:54px}
+.price{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:34px 30px;position:relative}
+.price.hl{background:var(--ink);color:var(--cream);border-color:var(--ink)}
+.price .badge{position:absolute;top:-12px;left:30px;background:var(--brass);color:#fff;font:600 11px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;padding:8px 12px 6px;border-radius:999px}
+.price h3{font-size:22px}
+.price .amount{font:400 56px/1 var(--serif);margin:20px 0 6px}
+.price .amount small{font:300 16px var(--sans);letter-spacing:.04em;opacity:.7}
+.price .per{font-size:14px;color:var(--muted);margin-bottom:22px}
+.price.hl .per{color:rgba(244,239,232,.65)}
+.price ul{list-style:none;padding:0;margin:0;font-size:16px}
+.price li{padding:10px 0;border-top:1px solid var(--line)}
+.price.hl li{border-color:rgba(244,239,232,.16)}
+.price-note{margin-top:26px;font-size:15px;color:var(--muted)}
+.price-rows{margin-top:18px;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:8px 30px}
+.price-rows div{display:flex;justify-content:space-between;gap:20px;padding:16px 0;border-bottom:1px solid var(--line);font-size:17px}
+.price-rows div:last-child{border:0}
+.price-rows b{font:400 22px var(--serif)}
+
+/* schedule */
+.schedule table{width:100%;border-collapse:collapse;margin-top:44px;font-size:16px}
+.schedule th{font:600 12px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--muted);text-align:left;padding:0 10px 16px}
+.schedule td{padding:16px 10px;border-top:1px solid var(--line);vertical-align:top}
+.schedule td:first-child{font:400 20px var(--serif);white-space:nowrap}
+.slot{display:inline-block;background:var(--sage-soft);color:var(--sage);border-radius:999px;padding:6px 12px 4px;margin:0 6px 6px 0;font-size:14px;letter-spacing:.04em}
+.slot.b{background:#F1E7D7;color:#7b5d33}
+.legend{display:flex;gap:18px;margin-top:20px;font-size:14px;color:var(--muted);flex-wrap:wrap}
+
+/* faq */
+.faq .grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px}
+details{border-top:1px solid var(--line);padding:4px 0}
+details:last-child{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;padding:22px 0;font:400 21px/1.3 var(--serif)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font:300 28px/1 var(--sans);color:var(--brass);transition:.3s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{color:var(--ink-soft);font-size:17px;padding:0 40px 14px 0}
+
+/* contact */
+.contact{background:var(--ink);color:var(--cream);padding-bottom:0}
+.contact .eyebrow{color:var(--brass-light)}
+.contact .grid{display:grid;grid-template-columns:1fr 1fr;gap:70px}
+.contact .lead{color:rgba(244,239,232,.75)}
+.info{margin-top:34px;display:grid;gap:22px}
+.info div{display:grid;grid-template-columns:120px 1fr;gap:16px;padding-bottom:20px;border-bottom:1px solid rgba(244,239,232,.14)}
+.info span{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--brass-light);padding-top:5px}
+.info a{text-decoration:none}
+.info a:hover{color:var(--brass-light)}
+form{background:rgba(244,239,232,.05);border:1px solid rgba(244,239,232,.14);border-radius:var(--r);padding:34px}
+form h3{margin-bottom:22px}
+label{display:block;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:rgba(244,239,232,.7);margin-bottom:8px}
+input,select,textarea{width:100%;background:transparent;border:0;border-bottom:1px solid rgba(244,239,232,.3);color:var(--cream);font:300 18px var(--sans);padding:8px 0 10px;margin-bottom:24px;outline:none;border-radius:0}
+select option{color:var(--ink)}
+input:focus,select:focus,textarea:focus{border-color:var(--brass-light)}
+textarea{resize:vertical;min-height:90px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.consent{display:flex;gap:10px;font-size:13px;color:rgba(244,239,232,.6);margin-bottom:24px;text-transform:none;letter-spacing:0}
+.consent input{width:auto;margin:3px 0 0}
+.map{margin-top:100px;height:380px;filter:grayscale(.85) sepia(.2) contrast(.95);border:0;width:100%;display:block}
+footer{background:#1f1b17;color:rgba(244,239,232,.6);font-size:14px;padding:50px 0}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap}
+footer .brand{color:var(--cream)}footer .brand .mk{color:var(--brass-light)}
+footer nav{display:flex;gap:24px;flex-wrap:wrap}
+footer a{text-decoration:none}footer a:hover{color:var(--brass-light)}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity 1s ease,transform 1s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none}.hero img.bg{animation:none}html{scroll-behavior:auto}}
+
+/* responsive */
+@media (max-width:1020px){
+  .cards{grid-template-columns:1fr 1fr}.features{grid-template-columns:1fr 1fr}
+  .manifest .grid,.visit,.faq .grid,.contact .grid{grid-template-columns:1fr;gap:50px}
+  .arch{max-width:460px}
+  .price-grid{grid-template-columns:1fr}
+}
+@media (max-width:1180px){.nav ul a{font-size:12px;letter-spacing:.12em}}
+@media (max-width:860px){
+  .nav ul{position:fixed;inset:84px 0 auto 0;background:var(--paper);flex-direction:column;align-items:flex-start;gap:0;padding:10px 24px 30px;box-shadow:0 20px 40px -20px rgba(0,0,0,.25);transform:translateY(-12px);opacity:0;pointer-events:none;transition:.3s}
+  .nav ul li{width:100%}
+  .nav ul a{color:var(--ink)!important;display:block;padding:16px 0;border-bottom:1px solid var(--line);font-size:14px}
+  .nav ul .btn{margin-top:20px;justify-content:center;border:0}
+  .nav.open{background:var(--paper)}
+  .nav.open ul{transform:none;opacity:1;pointer-events:auto}
+  .burger{display:block}
+  section{padding:84px 0}
+  .gallery{grid-auto-rows:150px;gap:10px}
+  .g1,.g2{grid-column:span 12}.g1{grid-row:span 2}.g2{grid-row:span 2}
+  .g3,.g4,.g5{grid-column:span 12;grid-row:span 2}
+  .studio-head{flex-direction:column;align-items:flex-start}
+  .steps{grid-template-columns:1fr;gap:34px}
+  .schedule{overflow-x:auto}
+  .schedule table{min-width:640px}
+}
+@media (max-width:560px){
+  .hero::after{background:linear-gradient(180deg,rgba(25,20,16,.55) 0%,rgba(25,20,16,.62) 45%,rgba(25,20,16,.8) 100%)}
+  .hero img.bg{object-position:72% 50%}
+  body{font-size:17px}
+  .cards,.features{grid-template-columns:1fr}
+  .hero .facts{gap:26px}.hero .facts b{font-size:28px}
+  .row2{grid-template-columns:1fr;gap:0}
+  .info div{grid-template-columns:1fr;gap:4px}
+  form{padding:26px 22px}
+  .brand .mk{width:42px}.brand .wm b{font-size:21px}
+}
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="LINDEN PILATES – strona główna"><span class="brand"><svg aria-hidden="true" class="mk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 124" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+<path stroke-width="3" d="M74 32 C66 16 40 14 27 30 C14 46 14 74 14 114 C42 104 74 92 86 68 C96 48 92 28 82 26 C78 25 75 28 74 32 Z"/>
+<path stroke-width="2.2" d="M74 32 C60 54 38 84 15 113"/>
+<g stroke-width="1.5">
+<path d="M67 42 C58 34 46 30 34 31"/><path d="M60 52 C50 44 37 41 24 43"/><path d="M52 63 C42 57 30 55 19 58"/><path d="M43 75 C35 71 26 71 16 74"/><path d="M34 87 C28 85 22 86 15 89"/>
+<path d="M68 41 C73 36 78 34 83 34"/><path d="M61 51 C70 47 80 46 88 48"/><path d="M53 62 C64 61 76 62 85 66"/><path d="M44 74 C56 76 66 79 74 84"/><path d="M35 86 C44 90 52 93 58 96"/>
+</g>
+<path stroke-width="2.4" d="M74 32 C82 22 92 13 104 6"/>
+<path stroke-width="1.8" d="M92 13 C98 26 101 38 104 52"/>
+<path stroke-width="1.5" d="M95 20 C104 23 111 31 113 42 C104 41 98 34 95 20 Z"/>
+<g stroke-width="1.3"><path d="M104 52 C100 58 97 63 95 68"/><path d="M104 52 C109 57 113 62 115 67"/><path d="M104 52 L105 74"/></g>
+<g stroke-width="1.2"><circle cx="95.00" cy="68.60" r="2.6"/><circle cx="98.23" cy="70.95" r="2.6"/><circle cx="97.00" cy="74.75" r="2.6"/><circle cx="93.00" cy="74.75" r="2.6"/><circle cx="91.77" cy="70.95" r="2.6"/><circle cx="95" cy="72" r="1.3" fill="currentColor"/><circle cx="115.00" cy="67.60" r="2.6"/><circle cx="118.23" cy="69.95" r="2.6"/><circle cx="117.00" cy="73.75" r="2.6"/><circle cx="113.00" cy="73.75" r="2.6"/><circle cx="111.77" cy="69.95" r="2.6"/><circle cx="115" cy="71" r="1.3" fill="currentColor"/><circle cx="105.00" cy="75.60" r="2.6"/><circle cx="108.23" cy="77.95" r="2.6"/><circle cx="107.00" cy="81.75" r="2.6"/><circle cx="103.00" cy="81.75" r="2.6"/><circle cx="101.77" cy="77.95" r="2.6"/><circle cx="105" cy="79" r="1.3" fill="currentColor"/></g>
+</svg><span class="wm"><b>LINDEN</b><small>Pilates</small></span></span></a>
+    <nav aria-label="Menu główne">
+      <ul id="menu">
+        <li><a href="#studio">Studio</a></li>
+        <li><a href="#zajecia">Zajęcia</a></li>
+        <li><a href="#pierwsza-wizyta">Pierwsza wizyta</a></li>
+        <li><a href="#cennik">Cennik</a></li>
+        <li><a href="#grafik">Grafik</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+        <li><a href="#kontakt" class="btn btn-primary">Zapisz się</a></li>
+      </ul>
+    </nav>
+    <button class="burger" id="burger" aria-label="Otwórz menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <img class="bg" src="img/hero-sala-linden.jpg" alt="Sala LINDEN PILATES: reformery, łukowe lustra i ściana z mchu z podświetlanym logo">
+  <div class="wrap">
+    <div class="eyebrow">Wrocław · Lipa Piotrowska</div>
+    <h1>Pilates na reformerach <em>w cieniu lipy</em></h1>
+    <p class="lead">Kameralne studio, w którym ćwiczysz w grupie do pięciu osób. Każdy reformer ma swoje lustro, a instruktor ma czas dla każdego.</p>
+    <div class="ctas">
+      <a href="#kontakt" class="btn btn-brass">Umów pierwszą wizytę</a>
+      <a href="#zajecia" class="btn btn-ghost">Zobacz zajęcia</a>
+    </div>
+    <div class="facts">
+      <div><b>5</b><span>osób w grupie, max</span></div>
+      <div><b>1:1</b><span>reformer i lustro</span></div>
+      <div><b>55 min</b><span>jeden trening</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- MANIFEST -->
+<section class="manifest" id="o-nas">
+  <div class="wrap grid">
+    <div class="rv">
+      <svg aria-hidden="true" class="mk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 124" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+<path stroke-width="3" d="M74 32 C66 16 40 14 27 30 C14 46 14 74 14 114 C42 104 74 92 86 68 C96 48 92 28 82 26 C78 25 75 28 74 32 Z"/>
+<path stroke-width="2.2" d="M74 32 C60 54 38 84 15 113"/>
+<g stroke-width="1.5">
+<path d="M67 42 C58 34 46 30 34 31"/><path d="M60 52 C50 44 37 41 24 43"/><path d="M52 63 C42 57 30 55 19 58"/><path d="M43 75 C35 71 26 71 16 74"/><path d="M34 87 C28 85 22 86 15 89"/>
+<path d="M68 41 C73 36 78 34 83 34"/><path d="M61 51 C70 47 80 46 88 48"/><path d="M53 62 C64 61 76 62 85 66"/><path d="M44 74 C56 76 66 79 74 84"/><path d="M35 86 C44 90 52 93 58 96"/>
+</g>
+<path stroke-width="2.4" d="M74 32 C82 22 92 13 104 6"/>
+<path stroke-width="1.8" d="M92 13 C98 26 101 38 104 52"/>
+<path stroke-width="1.5" d="M95 20 C104 23 111 31 113 42 C104 41 98 34 95 20 Z"/>
+<g stroke-width="1.3"><path d="M104 52 C100 58 97 63 95 68"/><path d="M104 52 C109 57 113 62 115 67"/><path d="M104 52 L105 74"/></g>
+<g stroke-width="1.2"><circle cx="95.00" cy="68.60" r="2.6"/><circle cx="98.23" cy="70.95" r="2.6"/><circle cx="97.00" cy="74.75" r="2.6"/><circle cx="93.00" cy="74.75" r="2.6"/><circle cx="91.77" cy="70.95" r="2.6"/><circle cx="95" cy="72" r="1.3" fill="currentColor"/><circle cx="115.00" cy="67.60" r="2.6"/><circle cx="118.23" cy="69.95" r="2.6"/><circle cx="117.00" cy="73.75" r="2.6"/><circle cx="113.00" cy="73.75" r="2.6"/><circle cx="111.77" cy="69.95" r="2.6"/><circle cx="115" cy="71" r="1.3" fill="currentColor"/><circle cx="105.00" cy="75.60" r="2.6"/><circle cx="108.23" cy="77.95" r="2.6"/><circle cx="107.00" cy="81.75" r="2.6"/><circle cx="103.00" cy="81.75" r="2.6"/><circle cx="101.77" cy="77.95" r="2.6"/><circle cx="105" cy="79" r="1.3" fill="currentColor"/></g>
+</svg>
+      <div class="eyebrow">Dlaczego LINDEN</div>
+      <h2>Linden znaczy lipa</h2>
+      <p class="lead">Nazwa studia mówi o tym, skąd jesteśmy i jak chcemy, żebyś się u nas czuł.</p>
+      <div class="meanings">
+        <div class="meaning"><div class="n">I</div><div><h3>Miejsce</h3><p>Jesteśmy na osiedlu Lipa Piotrowska. Lipa w nazwie to nasz kawałek okolicy, a studio jest blisko domu.</p></div></div>
+        <div class="meaning"><div class="n">II</div><div><h3>Natura</h3><p>Studio urządziliśmy w drewnie, w ciepłym świetle i wśród zieleni, która jest z nami przez cały rok, ze ścianą z mchu na czele.</p></div></div>
+        <div class="meaning"><div class="n">III</div><div><h3>Spokój</h3><p>Kwiat lipy od pokoleń kojarzy się z ukojeniem. Tak chcemy prowadzić zajęcia: spokojnie, uważnie i w Twoim tempie.</p></div></div>
+      </div>
+    </div>
+    <div class="arch rv"><img src="img/03-detal-lustro.jpg" alt="Wysokie łukowe lustro w mosiężnej ramie za reformerem" loading="lazy"></div>
+  </div>
+</section>
+
+<!-- STUDIO -->
+<section id="studio">
+  <div class="wrap">
+    <div class="studio-head rv">
+      <div><div class="eyebrow">Studio</div><h2>Spokojna przestrzeń do pracy z ciałem</h2></div>
+      <p class="lead">Jasna sala z dużym oknem, dębową podłogą i ukrytą zabudową. Nie ma tu bałaganu ani sprzętu na widoku, są tylko reformery, światło i zieleń.</p>
+    </div>
+    <div class="gallery">
+      <figure class="g1 rv"><img src="img/sciana-z-mchu-linden.jpg" alt="Ściana z mchu z podświetlanym logo LINDEN PILATES" loading="lazy"><figcaption>Ściana z mchu</figcaption></figure>
+      <figure class="g2 rv"><img src="img/05-okno-i-swiatlo.jpg" alt="Duże okno, oliwka w donicy i miękkie światło" loading="lazy"><figcaption>Dzienne światło</figcaption></figure>
+      <figure class="g3 rv"><img src="img/04-zabudowa.jpg" alt="Dębowa zabudowa ryflowana z niszą na ręczniki i piłki" loading="lazy"><figcaption>Wszystko na swoim miejscu</figcaption></figure>
+      <figure class="g4 rv"><img src="img/07-hero-wieczor.jpg" alt="Sala wieczorem w ciepłym świetle LED" loading="lazy"><figcaption>Wieczorne zajęcia</figcaption></figure>
+      <figure class="g5 rv"><img src="img/02-rzad-luster.jpg" alt="Rząd reformerów z łukowymi lustrami" loading="lazy"><figcaption>Lustro przy każdym reformerze</figcaption></figure>
+    </div>
+    <div class="features">
+      <div class="feature rv"><div class="ico">5</div><h3>Małe grupy</h3><p>Najwyżej pięć osób na zajęciach, więc każdy ruch jest pod okiem instruktora.</p></div>
+      <div class="feature rv"><div class="ico">◐</div><h3>Własne lustro</h3><p>Za każdym reformerem wisi wysokie lustro. Widzisz swoją sylwetkę i od razu poprawiasz ustawienie.</p></div>
+      <div class="feature rv"><div class="ico">❦</div><h3>Zieleń przez cały rok</h3><p>Ściana z mchu z naszym logo, oliwka i strelicja tworzą spokojne tło do treningu.</p></div>
+      <div class="feature rv"><div class="ico">◎</div><h3>Szatnia i prysznic</h3><p>Szafki z zamkiem, ławka i łazienka z prysznicem. Możesz przyjść prosto z pracy.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CLASSES -->
+<section class="classes" id="zajecia">
+  <div class="wrap">
+    <div class="rv"><div class="eyebrow">Zajęcia</div><h2>Wybierz swój sposób ćwiczenia</h2>
+    <p class="lead">Wszystkie zajęcia odbywają się na reformerach. Ćwiczenia dobieramy do Twojego poziomu, celu i samopoczucia.</p></div>
+    <div class="cards">
+      <article class="card rv"><div class="tag">Na start</div><h3>Pierwsza wizyta</h3><p>Spokojne wprowadzenie: poznasz reformer, podstawowe zasady pilatesu i oddech. Na koniec dobierzemy dla Ciebie zajęcia.</p><ul><li>1–2 osoby</li><li>55 minut</li></ul></article>
+      <article class="card rv"><div class="tag">Najpopularniejsze</div><h3>Reformer w grupie</h3><p>Trening całego ciała w małej grupie. Wzmacnia mięśnie głębokie, poprawia postawę i mobilność.</p><ul><li>do 5 osób</li><li>poziom podstawowy i średni</li></ul></article>
+      <article class="card rv"><div class="tag">We dwoje</div><h3>Duet</h3><p>Trening z partnerem, przyjaciółką lub mamą. Program ułożony pod Was dwoje, w Waszym tempie.</p><ul><li>2 osoby</li><li>termin do ustalenia</li></ul></article>
+      <article class="card rv"><div class="tag">1 : 1</div><h3>Trening indywidualny</h3><p>Pełna uwaga instruktora. Dobre rozwiązanie przy powrocie po kontuzji, w ciąży i po porodzie, oraz przy konkretnym celu.</p><ul><li>1 osoba</li><li>plan dopasowany do Ciebie</li></ul></article>
+    </div>
+  </div>
+</section>
+
+<!-- FIRST VISIT -->
+<section id="pierwsza-wizyta">
+  <div class="wrap">
+    <div class="visit">
+      <div class="rv">
+        <div class="eyebrow">Pierwsza wizyta</div>
+        <h2>Nie musisz znać pilatesu, żeby zacząć</h2>
+        <p class="lead">Większość osób przychodzi do nas bez doświadczenia. Pokażemy Ci wszystko krok po kroku.</p>
+        <ul class="checklist">
+          <li>Wygodny, przylegający strój sportowy</li>
+          <li>Skarpetki antypoślizgowe (można kupić na miejscu)</li>
+          <li>Butelka wody, ręcznik dostaniesz od nas</li>
+          <li>Przyjdź 10 minut wcześniej, żeby spokojnie się przebrać</li>
+        </ul>
+        <a href="#kontakt" class="btn btn-primary">Umów pierwszą wizytę</a>
+      </div>
+      <div class="photo rv"><img src="img/01-hero-od-wejscia-zielen.jpg" alt="Sala z reformerami widziana od wejścia" loading="lazy"></div>
+    </div>
+    <div class="steps">
+      <div class="step rv"><h3>Zapisz się</h3><p>Napisz lub zadzwoń, a dobierzemy termin pierwszej wizyty.</p></div>
+      <div class="step rv"><h3>Poznaj reformer</h3><p>Na spokojnym wprowadzeniu nauczysz się podstaw i powiesz nam o swoim celu.</p></div>
+      <div class="step rv"><h3>Ćwicz regularnie</h3><p>Wybierz karnet i zajęcia, a efekty zobaczysz po kilku tygodniach treningu 2 razy w tygodniu.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing" id="cennik">
+  <div class="wrap">
+    <div class="rv"><div class="eyebrow">Cennik</div><h2>Proste zasady, bez opłat wpisowych</h2>
+    <p class="lead">Karnety są ważne 30 dni od pierwszych zajęć. Płacisz na miejscu kartą, BLIK-iem lub przelewem.</p></div>
+    <div class="price-grid">
+      <div class="price rv"><h3>Pierwsza wizyta</h3><div class="amount">99 <small>zł</small></div><div class="per">jednorazowo, wprowadzenie</div><ul><li>poznanie reformera</li><li>rozmowa o Twoim celu</li><li>dobór zajęć</li></ul></div>
+      <div class="price hl rv"><span class="badge">Najczęściej wybierany</span><h3>Karnet 8 wejść</h3><div class="amount">720 <small>zł</small></div><div class="per">90 zł za zajęcia · 30 dni</div><ul><li>2 treningi w tygodniu</li><li>zajęcia grupowe do 5 osób</li><li>pierwszeństwo zapisów</li></ul></div>
+      <div class="price rv"><h3>Karnet 4 wejścia</h3><div class="amount">400 <small>zł</small></div><div class="per">100 zł za zajęcia · 30 dni</div><ul><li>1 trening w tygodniu</li><li>zajęcia grupowe do 5 osób</li><li>możliwość przedłużenia</li></ul></div>
+    </div>
+    <div class="price-rows rv">
+      <div><span>Pojedyncze wejście na zajęcia grupowe</span><b>110 zł</b></div>
+      <div><span>Duet, 2 osoby, 55 min</span><b>300 zł</b></div>
+      <div><span>Trening indywidualny, 55 min</span><b>220 zł</b></div>
+      <div><span>Pakiet 5 treningów indywidualnych</span><b>1000 zł</b></div>
+    </div>
+    <p class="price-note">Zajęcia możesz bezpłatnie odwołać do 12 godzin przed rozpoczęciem.</p>
+  </div>
+</section>
+
+<!-- SCHEDULE -->
+<section class="schedule" id="grafik">
+  <div class="wrap">
+    <div class="rv"><div class="eyebrow">Grafik</div><h2>Zajęcia rano i wieczorem</h2>
+    <p class="lead">Aktualny grafik i wolne miejsca potwierdzamy przy zapisie.</p></div>
+    <table class="rv">
+      <thead><tr><th>Dzień</th><th>Rano</th><th>Po południu</th><th>Wieczorem</th></tr></thead>
+      <tbody>
+        <tr><td>Poniedziałek</td><td><span class="slot">7:00 Grupa</span></td><td><span class="slot b">16:30 Indywidualne</span></td><td><span class="slot">18:00 Grupa</span><span class="slot">19:15 Grupa</span></td></tr>
+        <tr><td>Wtorek</td><td><span class="slot">9:00 Grupa</span></td><td><span class="slot b">15:00 Duet</span></td><td><span class="slot">18:00 Grupa</span><span class="slot">19:15 Grupa</span></td></tr>
+        <tr><td>Środa</td><td><span class="slot">7:00 Grupa</span></td><td><span class="slot b">16:30 Indywidualne</span></td><td><span class="slot">18:00 Grupa</span><span class="slot">19:15 Grupa</span></td></tr>
+        <tr><td>Czwartek</td><td><span class="slot">9:00 Grupa</span></td><td><span class="slot b">15:00 Duet</span></td><td><span class="slot">18:00 Grupa</span><span class="slot">19:15 Grupa</span></td></tr>
+        <tr><td>Piątek</td><td><span class="slot">7:00 Grupa</span></td><td><span class="slot b">16:30 Pierwsza wizyta</span></td><td><span class="slot">18:00 Grupa</span></td></tr>
+        <tr><td>Sobota</td><td><span class="slot">9:00 Grupa</span><span class="slot">10:15 Grupa</span></td><td>–</td><td>–</td></tr>
+      </tbody>
+    </table>
+    <div class="legend rv"><span><span class="slot" style="margin:0">Grupa</span> do 5 osób</span><span><span class="slot b" style="margin:0">Indywidualne / duet</span> po wcześniejszym umówieniu</span></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq manifest" id="faq">
+  <div class="wrap grid">
+    <div class="rv"><div class="eyebrow">Pytania</div><h2>Zanim przyjdziesz</h2><p class="lead">Nie znalazłeś odpowiedzi? Napisz do nas, chętnie pomożemy.</p></div>
+    <div class="rv">
+      <details open><summary>Czy muszę mieć doświadczenie?</summary><p>Nie. Zacznij od pierwszej wizyty, na której poznasz reformer i podstawy. Potem dobierzemy grupę na Twoim poziomie.</p></details>
+      <details><summary>Czym różni się reformer od pilatesu na macie?</summary><p>Reformer to maszyna z ruchomym wózkiem i sprężynami. Sprężyny dają opór albo wsparcie, więc ten sam ruch można ułatwić lub utrudnić. Dzięki temu trening jest bezpieczny i bardzo dokładny.</p></details>
+      <details><summary>Czy mogę ćwiczyć w ciąży albo po kontuzji?</summary><p>Często tak, ale zawsze po konsultacji z lekarzem lub fizjoterapeutą. W takiej sytuacji polecamy treningi indywidualne, dopasowane do Twojego stanu.</p></details>
+      <details><summary>Jak często ćwiczyć?</summary><p>Najlepsze efekty daje regularność: 2 treningi w tygodniu. Już po kilku tygodniach zwykle poprawia się postawa, a plecy przestają boleć.</p></details>
+      <details><summary>Jak odwołać zajęcia?</summary><p>Napisz lub zadzwoń najpóźniej 12 godzin przed zajęciami. Wtedy wejście wraca na Twój karnet.</p></details>
+      <details><summary>Czy jest szatnia i prysznic?</summary><p>Tak. Masz do dyspozycji szafki zamykane na klucz, ławkę, lustro i łazienkę z prysznicem.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="kontakt">
+  <div class="wrap grid">
+    <div class="rv">
+      <div class="eyebrow">Kontakt i zapisy</div>
+      <h2>Do zobaczenia na Lipie Piotrowskiej</h2>
+      <p class="lead">Zapisz się na pierwszą wizytę albo zapytaj o wolne miejsca. Odpowiadamy w ciągu jednego dnia.</p>
+      <div class="info">
+        <div><span>Adres</span><p style="margin:0">ul. [uzupełnij]<br>Lipa Piotrowska, Wrocław</p></div>
+        <div><span>Telefon</span><a href="tel:+48000000000">+48 000 000 000</a></div>
+        <div><span>E-mail</span><a href="mailto:kontakt@lindenpilates.pl">kontakt@lindenpilates.pl</a></div>
+        <div><span>Instagram</span><a href="https://instagram.com/" target="_blank" rel="noopener">@lindenpilates</a></div>
+      </div>
+    </div>
+    <form class="rv" id="zapis" action="mailto:kontakt@lindenpilates.pl" method="post" enctype="text/plain">
+      <h3>Zapisz się</h3>
+      <div class="row2">
+        <div><label for="f-imie">Imię</label><input id="f-imie" name="Imię" required autocomplete="given-name"></div>
+        <div><label for="f-tel">Telefon</label><input id="f-tel" name="Telefon" type="tel" required autocomplete="tel"></div>
+      </div>
+      <label for="f-mail">E-mail</label><input id="f-mail" name="E-mail" type="email" autocomplete="email">
+      <label for="f-typ">Rodzaj zajęć</label>
+      <select id="f-typ" name="Zajęcia"><option>Pierwsza wizyta</option><option>Reformer w grupie</option><option>Duet</option><option>Trening indywidualny</option></select>
+      <label for="f-msg">Wiadomość</label><textarea id="f-msg" name="Wiadomość" placeholder="Preferowane dni i godziny, Twój cel, przeciwwskazania…"></textarea>
+      <label class="consent"><input type="checkbox" required> Zgadzam się na kontakt w sprawie zapisu. Dane wykorzystamy wyłącznie do odpowiedzi.</label>
+      <button class="btn btn-brass" type="submit">Wyślij zgłoszenie</button>
+    </form>
+  </div>
+  <iframe class="map" title="Mapa: Lipa Piotrowska, Wrocław" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Lipa+Piotrowska,+Wroc%C5%82aw&z=15&output=embed"></iframe>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="brand"><svg aria-hidden="true" class="mk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 124" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+<path stroke-width="3" d="M74 32 C66 16 40 14 27 30 C14 46 14 74 14 114 C42 104 74 92 86 68 C96 48 92 28 82 26 C78 25 75 28 74 32 Z"/>
+<path stroke-width="2.2" d="M74 32 C60 54 38 84 15 113"/>
+<g stroke-width="1.5">
+<path d="M67 42 C58 34 46 30 34 31"/><path d="M60 52 C50 44 37 41 24 43"/><path d="M52 63 C42 57 30 55 19 58"/><path d="M43 75 C35 71 26 71 16 74"/><path d="M34 87 C28 85 22 86 15 89"/>
+<path d="M68 41 C73 36 78 34 83 34"/><path d="M61 51 C70 47 80 46 88 48"/><path d="M53 62 C64 61 76 62 85 66"/><path d="M44 74 C56 76 66 79 74 84"/><path d="M35 86 C44 90 52 93 58 96"/>
+</g>
+<path stroke-width="2.4" d="M74 32 C82 22 92 13 104 6"/>
+<path stroke-width="1.8" d="M92 13 C98 26 101 38 104 52"/>
+<path stroke-width="1.5" d="M95 20 C104 23 111 31 113 42 C104 41 98 34 95 20 Z"/>
+<g stroke-width="1.3"><path d="M104 52 C100 58 97 63 95 68"/><path d="M104 52 C109 57 113 62 115 67"/><path d="M104 52 L105 74"/></g>
+<g stroke-width="1.2"><circle cx="95.00" cy="68.60" r="2.6"/><circle cx="98.23" cy="70.95" r="2.6"/><circle cx="97.00" cy="74.75" r="2.6"/><circle cx="93.00" cy="74.75" r="2.6"/><circle cx="91.77" cy="70.95" r="2.6"/><circle cx="95" cy="72" r="1.3" fill="currentColor"/><circle cx="115.00" cy="67.60" r="2.6"/><circle cx="118.23" cy="69.95" r="2.6"/><circle cx="117.00" cy="73.75" r="2.6"/><circle cx="113.00" cy="73.75" r="2.6"/><circle cx="111.77" cy="69.95" r="2.6"/><circle cx="115" cy="71" r="1.3" fill="currentColor"/><circle cx="105.00" cy="75.60" r="2.6"/><circle cx="108.23" cy="77.95" r="2.6"/><circle cx="107.00" cy="81.75" r="2.6"/><circle cx="103.00" cy="81.75" r="2.6"/><circle cx="101.77" cy="77.95" r="2.6"/><circle cx="105" cy="79" r="1.3" fill="currentColor"/></g>
+</svg><span class="wm"><b>LINDEN</b><small>Pilates</small></span></span>
+    <nav><a href="#studio">Studio</a><a href="#zajecia">Zajęcia</a><a href="#cennik">Cennik</a><a href="#grafik">Grafik</a><a href="#faq">FAQ</a><a href="#kontakt">Kontakt</a></nav>
+    <div>© <span id="y">2026</span> LINDEN PILATES · Wrocław</div>
+  </div>
+</footer>
+
+<script>
+const nav=document.getElementById('nav'),burger=document.getElementById('burger');
+const onScroll=()=>nav.classList.toggle('solid',scrollY>40);onScroll();addEventListener('scroll',onScroll,{passive:true});
+burger.addEventListener('click',()=>{const o=nav.classList.toggle('open');burger.setAttribute('aria-expanded',o);});
+document.querySelectorAll('#menu a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');burger.setAttribute('aria-expanded',false)}));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+document.getElementById('y').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>

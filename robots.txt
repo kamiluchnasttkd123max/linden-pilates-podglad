@@ -1,0 +1,6 @@
+# WERSJA ROBOCZA – strona ukryta przed wyszukiwarkami.
+# Po uzupełnieniu danych zamień "Disallow: /" na "Allow: /".
+User-agent: *
+Disallow: /
+
+Sitemap: https://lindenpilates.pl/sitemap.xml
