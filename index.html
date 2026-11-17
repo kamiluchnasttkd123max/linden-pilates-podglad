@@ -118,6 +118,20 @@ footer .brand .lg{height:70px}
 .arch img{width:100%;height:100%;object-fit:cover}
 .manifest .mk{width:96px;color:var(--brass);margin-bottom:14px}
 
+/* instruktorka */
+.team{background:var(--cream)}
+.team .grid{display:grid;grid-template-columns:1fr 1.1fr;gap:80px;align-items:center}
+.team .arch img{object-position:50% 18%}
+.team .name{font:400 clamp(30px,3.4vw,42px)/1.1 var(--serif);margin:6px 0 4px}
+.team .role{font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--brass);margin-bottom:22px}
+.team blockquote{margin:28px 0 0;padding:6px 0 6px 22px;border-left:2px solid var(--brass);font:italic 400 22px/1.45 var(--serif);color:var(--ink)}
+.team .creds{list-style:none;padding:0;margin:30px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:0 30px}
+.team .creds li{padding:13px 0;border-top:1px solid var(--line);font-size:16px;color:var(--ink-soft)}
+.team .creds b{display:block;font-weight:600;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);margin-bottom:3px}
+.team .btn{margin-top:34px}
+@media (max-width:1020px){.team .grid{grid-template-columns:1fr;gap:50px}.team .arch{max-width:460px}}
+@media (max-width:560px){.team .creds{grid-template-columns:1fr}}
+
 /* studio gallery */
 .studio-head{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-bottom:48px}
 .studio-head .lead{margin:0}
@@ -276,6 +290,7 @@ footer a{text-decoration:none}footer a:hover{color:var(--brass-light)}
     <nav aria-label="Menu główne">
       <ul id="menu">
         <li><a href="#studio">Studio</a></li>
+        <li><a href="#instruktorka">Instruktorka</a></li>
         <li><a href="#zajecia">Zajęcia</a></li>
         <li><a href="#pierwsza-wizyta">Pierwsza wizyta</a></li>
         <li><a href="#cennik">Cennik</a></li>
@@ -296,7 +311,7 @@ footer a{text-decoration:none}footer a:hover{color:var(--brass-light)}
   <div class="wrap">
     <div class="eyebrow">Wrocław · Lipa Piotrowska</div>
     <h1>Pilates na reformerach <em>w cieniu lipy</em></h1>
-    <p class="lead">Kameralne studio, w którym ćwiczysz w grupie do pięciu osób. Każdy reformer ma swoje lustro, a instruktor ma czas dla każdego.</p>
+    <p class="lead">Kameralne studio, w którym ćwiczysz w grupie do pięciu osób. Każdy reformer ma swoje lustro, a instruktorka ma czas dla każdego.</p>
     <div class="ctas">
       <a href="#kontakt" class="btn btn-brass">Umów pierwszą wizytę</a>
       <a href="#zajecia" class="btn btn-ghost">Zobacz zajęcia</a>
@@ -342,10 +357,31 @@ footer a{text-decoration:none}footer a:hover{color:var(--brass-light)}
       <figure class="g5 rv"><img src="img/02-rzad-luster.jpg" alt="Rząd reformerów z łukowymi lustrami" loading="lazy"><figcaption>Lustro przy każdym reformerze</figcaption></figure>
     </div>
     <div class="features">
-      <div class="feature rv"><div class="ico">5</div><h3>Małe grupy</h3><p>Najwyżej pięć osób na zajęciach, więc każdy ruch jest pod okiem instruktora.</p></div>
+      <div class="feature rv"><div class="ico">5</div><h3>Małe grupy</h3><p>Najwyżej pięć osób na zajęciach, więc każdy ruch jest pod okiem instruktorki.</p></div>
       <div class="feature rv"><div class="ico">◐</div><h3>Własne lustro</h3><p>Za każdym reformerem wisi wysokie lustro. Widzisz swoją sylwetkę i od razu poprawiasz ustawienie.</p></div>
       <div class="feature rv"><div class="ico">❦</div><h3>Zieleń przez cały rok</h3><p>Ściana z mchu z naszym logo, oliwka i strelicja tworzą spokojne tło do treningu.</p></div>
       <div class="feature rv"><div class="ico">◎</div><h3>Szatnia i prysznic</h3><p>Szafki z zamkiem, ławka i łazienka z prysznicem. Możesz przyjść prosto z pracy.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- INSTRUKTORKA -->
+<section class="team" id="instruktorka">
+  <div class="wrap grid">
+    <div class="arch rv"><img src="img/instruktorka.jpg" alt="Instruktorka LINDEN PILATES siedzi na skrzyni reformera w jasnej sali" loading="lazy"></div>
+    <div class="rv">
+      <div class="eyebrow">Instruktorka</div>
+      <h2 class="name">[Imię Nazwisko]</h2>
+      <div class="role">Instruktorka pilatesu na reformerach</div>
+      <p class="lead">Na zajęciach w LINDEN pracujesz pod okiem jednej, stałej instruktorki. Zna Twoje ciało, pamięta, nad czym pracujesz, i dobiera ćwiczenia do Twojego dnia.</p>
+      <blockquote>Pilates to nie wyścig. Liczy się spokojny oddech, dobre ustawienie i ruch, po którym czujesz się lżej.</blockquote>
+      <ul class="creds">
+        <li><b>Certyfikaty</b>[np. Reformer Pilates, Mat Pilates]</li>
+        <li><b>Doświadczenie</b>[np. 6 lat prowadzenia zajęć]</li>
+        <li><b>Specjalizacja</b>[np. zdrowy kręgosłup, ciąża i po porodzie]</li>
+        <li><b>Prowadzi</b>Pierwsze wizyty, grupy, duety i treningi 1:1</li>
+      </ul>
+      <a href="#kontakt" class="btn btn-primary">Umów pierwszą wizytę</a>
     </div>
   </div>
 </section>
@@ -359,7 +395,7 @@ footer a{text-decoration:none}footer a:hover{color:var(--brass-light)}
       <article class="card rv"><div class="tag">Na start</div><h3>Pierwsza wizyta</h3><p>Spokojne wprowadzenie: poznasz reformer, podstawowe zasady pilatesu i oddech. Na koniec dobierzemy dla Ciebie zajęcia.</p><ul><li>1–2 osoby</li><li>55 minut</li></ul></article>
       <article class="card rv"><div class="tag">Najpopularniejsze</div><h3>Reformer w grupie</h3><p>Trening całego ciała w małej grupie. Wzmacnia mięśnie głębokie, poprawia postawę i mobilność.</p><ul><li>do 5 osób</li><li>poziom podstawowy i średni</li></ul></article>
       <article class="card rv"><div class="tag">We dwoje</div><h3>Duet</h3><p>Trening z partnerem, przyjaciółką lub mamą. Program ułożony pod Was dwoje, w Waszym tempie.</p><ul><li>2 osoby</li><li>termin do ustalenia</li></ul></article>
-      <article class="card rv"><div class="tag">1 : 1</div><h3>Trening indywidualny</h3><p>Pełna uwaga instruktora. Dobre rozwiązanie przy powrocie po kontuzji, w ciąży i po porodzie, oraz przy konkretnym celu.</p><ul><li>1 osoba</li><li>plan dopasowany do Ciebie</li></ul></article>
+      <article class="card rv"><div class="tag">1 : 1</div><h3>Trening indywidualny</h3><p>Pełna uwaga instruktorki. Dobre rozwiązanie przy powrocie po kontuzji, w ciąży i po porodzie, oraz przy konkretnym celu.</p><ul><li>1 osoba</li><li>plan dopasowany do Ciebie</li></ul></article>
     </div>
   </div>
 </section>
